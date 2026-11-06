@@ -1,0 +1,15 @@
+--- a/src/zonal_matrices_in_S.jl
++++ b/src/zonal_matrices_in_S.jl
+@@ -87,6 +87,12 @@
+     end
+     P, s = polynomial_ring(F, t^2)
+     generatedany = false
++    # skip the (large, dimension-free) auxiliary computation if all files for this dimension exist
++    alldone_n = all(isfile("cache/zonalstore/$n/pol-$(n)-" * string(t) * "-" * strip(string(lambda)) * "-" * string(ws[l1]) * "-" * string(ws[l2]) * ".txt") for l1 = 1:m for l2 = 1:l1)
++    if alldone_n
++        verbose && println(" (n-files present, skipped)")
++        return false
++    end
+     preptime = @elapsed begin
+         # prepare the integrants
+         prepzonalpolmat(lambda, ws, t)
