@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "Please cite the paper given under preferred-citation."
-title: "Code and certificates for: The kissing numbers in dimensions five and seven are at most 43 and 132"
+title: "Code and certificates for: The kissing numbers in dimensions five, six and seven are at most 43, 76 and 132"
 authors:
   - given-names: "Tejasvi Singh"
     family-names: "Tomar"
     orcid: "https://orcid.org/0000-0003-4668-3639"
-version: "2"
-date-released: "2026-11-06"
+version: "3"
+date-released: "2026-11-12"
 license: CC-BY-4.0
 repository-code: "https://github.com/tejasvi/kissing-numbers-lasserre"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23992399"
+    value: "10.5281/zenodo.24093810"
     description: "Supplement on Zenodo (certificates, zonal files, code, Lean project)"
 keywords:
   - kissing number
@@ -22,11 +22,11 @@ keywords:
   - Lean
 preferred-citation:
   type: article
-  title: "The kissing numbers in dimensions five and seven are at most 43 and 132"
+  title: "The kissing numbers in dimensions five, six and seven are at most 43, 76 and 132"
   authors:
     - given-names: "Tejasvi Singh"
       family-names: "Tomar"
       orcid: "https://orcid.org/0000-0003-4668-3639"
-  doi: "10.5281/zenodo.23992400"
+  doi: "10.5281/zenodo.24093811"
   year: 2026
   month: 11
